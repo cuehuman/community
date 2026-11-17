@@ -14,6 +14,8 @@ body:
       label: Area
       options:
         - Agent API
+        - Webhooks
+        - MCP Server & Skill
         - Integration
         - Documentation
         - Developer Portal
