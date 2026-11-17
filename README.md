@@ -15,6 +15,7 @@ This is the public home for developers building with CueHuman:
 
 - **[Q&A](https://github.com/cuehuman/community/discussions/categories/q-a):** ask questions about the Agent API, your integration, the docs or your account.
 - **[Feature Requests](https://github.com/cuehuman/community/discussions/categories/feature-requests):** suggest what we should build next, and vote on other ideas.
+- **[Bug Reports](https://github.com/cuehuman/community/issues/new/choose):** report something in CueHuman that isn't working as it should.
 - **[Show and Tell](https://github.com/cuehuman/community/discussions/categories/show-and-tell):** share what you've built.
 - **[Announcements](https://github.com/cuehuman/community/discussions/categories/announcements):** API changes and new features.
 - **Integration code samples** to help you get started will be added here.

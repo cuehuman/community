@@ -1,0 +1,50 @@
+name: Bug Report
+description: Report something in CueHuman that isn't working as it should.
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This repository is public. Never post API keys, passwords, or the names, emails or phone numbers of the people you contact. IDs like `org_…` and `req_…` are safe to share. For anything private, email support@cuehuman.ai.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Agent API
+        - Integration
+        - Documentation
+        - Developer Portal
+        - Plans, Usage & Billing
+        - Humans
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: organization-id
+    attributes:
+      label: Organization ID
+      description: Find it on the Organization page of the Developer Portal. Type `none` if you haven't signed up yet.
+      placeholder: org_9f8e7d6c5b4a3K2mNpQ7t
+    validations:
+      required: true
+
+  - type: input
+    id: request-id
+    attributes:
+      label: Request ID
+      description: Add it if the bug is about a specific request.
+      placeholder: req_1a2b3c4d5e6f7g8h9i0jK
+    validations:
+      required: false
+
+  - type: textarea
+    id: what-went-wrong
+    attributes:
+      label: What went wrong
+      description: What happened, and what you expected. For an error, paste the error response, with any keys removed.
+    validations:
+      required: true
