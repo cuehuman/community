@@ -18,14 +18,14 @@ This is the public home for developers building with CueHuman:
 - **[Bug Reports](https://github.com/cuehuman/community/issues/new/choose):** report something in CueHuman that isn't working as it should.
 - **[Show and Tell](https://github.com/cuehuman/community/discussions/categories/show-and-tell):** share what you've built.
 - **[Announcements](https://github.com/cuehuman/community/discussions/categories/announcements):** API changes and new features.
-- **Integration code samples** to help you get started will be added here.
+- **Integration code samples** to help you get started will be added here. Have one to share? See [Contributing](CONTRIBUTING.md).
 
 ## Before You Post
 
 This repository is public. Never post API keys, passwords, or the names, emails or phone numbers of the people you contact. IDs like `org_…` and `req_…` are safe to share.
 
 - For anything private, email [support@cuehuman.ai](mailto:support@cuehuman.ai).
-- Report security problems to [security@cuehuman.ai](mailto:security@cuehuman.ai), never in a public post.
+- Report security problems privately, never in a public post. See [Security](SECURITY.md).
 
 ## Links
 
