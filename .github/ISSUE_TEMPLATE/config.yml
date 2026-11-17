@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a Question
+    url: https://github.com/cuehuman/community/discussions/categories/q-a
+    about: Questions about the Agent API, your integration, the docs or your account.
+  - name: Suggest a Feature
+    url: https://github.com/cuehuman/community/discussions/categories/feature-requests
+    about: Suggest what we should build next, and vote on other ideas.
+  - name: Report a Security Problem
+    url: https://github.com/cuehuman/community#before-you-post
+    about: Email security@cuehuman.ai. Never report a security problem in a public issue.
