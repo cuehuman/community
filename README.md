@@ -26,6 +26,7 @@ This repository is public. Never post API keys, passwords, or the names, emails 
 
 - For anything private, email [support@cuehuman.ai](mailto:support@cuehuman.ai).
 - Report security problems privately, never in a public post. See [Security](SECURITY.md).
+- Everyone taking part follows our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Links
 
