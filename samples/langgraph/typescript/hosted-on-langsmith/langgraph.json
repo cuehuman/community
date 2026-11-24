@@ -1,0 +1,11 @@
+{
+  "node_version": "20",
+  "dependencies": ["."],
+  "graphs": {
+    "approval": "./graph.ts:graph"
+  },
+  "http": {
+    "app": "./webhook.ts:app"
+  },
+  "env": ".env"
+}

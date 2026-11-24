@@ -1,0 +1,25 @@
+{
+  "name": "cuehuman-langgraph-hosted-on-langsmith",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "langgraphjs dev --no-browser",
+    "start-run": "tsx start-run.ts",
+    "show-run": "tsx show-run.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@langchain/core": "1.5.0",
+    "@langchain/langgraph": "1.7.5",
+    "@langchain/langgraph-sdk": "1.17.0",
+    "dotenv": "18.0.10",
+    "hono": "4.13.21",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@langchain/langgraph-cli": "1.8.1",
+    "@types/node": "26.6.6",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  }
+}

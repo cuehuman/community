@@ -66,8 +66,9 @@ export async function askAboutPausedCalls(threadId: string): Promise<void> {
   }
 }
 
-/** The tool calls a run is paused on, each waiting for a person's decision. */
+/** The tool calls a run is paused on, each waiting for a person's decision. An answered call has a result. */
 export async function pausedCalls(threadId: string): Promise<Array<{ id: string; value: ToolApprovalRequest }>> {
   const snapshot = await agent.graph.getState({ configurable: { thread_id: threadId } });
-  return snapshot.tasks.flatMap((task) => task.interrupts) as Array<{ id: string; value: ToolApprovalRequest }>;
+  const waiting = snapshot.tasks.filter((task) => task.result === undefined);
+  return waiting.flatMap((task) => task.interrupts) as Array<{ id: string; value: ToolApprovalRequest }>;
 }

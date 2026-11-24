@@ -55,7 +55,7 @@ async function resumeRun(event: WebhookEvent): Promise<void> {
   } else if (request.status === "completed") {
     decision = { type: "reject", message: request.comment ?? "The approver rejected this call." };
   } else {
-    decision = { type: "reject", message: `Nobody answered: the request ${request.status}. Do not try again.` };
+    decision = { type: "reject", message: `Nobody approved this call (the request ${request.status}), so it did not run. Do not try again.` };
   }
 
   const result = await advance(new Command({ resume: { [pausedId]: decision } }), threadId);
