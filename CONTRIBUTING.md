@@ -5,7 +5,7 @@ We welcome code samples and integration examples that show how to build with Cue
 ## Sharing a Code Sample
 
 1. Fork this repository and create a branch.
-2. Put your sample in its own folder under `samples/`, for example `samples/python-approval-flow/`.
+2. Put your sample in its own folder under `samples/`, by framework and language: `samples/<framework>/<language>/<sample-name>/`, for example `samples/langgraph/python/pause-and-resume/`. A sample that uses no framework goes under `samples/<language>/`, for example `samples/python/approval-flow/`.
 3. Add a `README.md` in that folder that says what the sample does and how to run it.
 4. Open a pull request. We review every pull request before it's merged.
 
