@@ -1,0 +1,10 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "approval": "./graph.py:graph"
+  },
+  "http": {
+    "app": "./webhook.py:app"
+  },
+  "env": ".env"
+}

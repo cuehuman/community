@@ -50,7 +50,8 @@ def resume_run(event: dict) -> None:
     elif request["status"] == "completed":
         decision = {"type": "reject", "message": request["comment"] or "The approver rejected this call."}
     else:
-        decision = {"type": "reject", "message": f"Nobody answered: the request {request['status']}. Do not try again."}
+        message = f"Nobody approved this call (the request {request['status']}), so it did not run. Do not try again."
+        decision = {"type": "reject", "message": message}
 
     result = advance(Command(resume={paused_id: decision}), thread_id)
     if result.interrupts:
