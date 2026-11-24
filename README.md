@@ -18,7 +18,7 @@ This is the public home for developers building with CueHuman:
 - **[Bug Reports](https://github.com/cuehuman/community/issues/new/choose):** report something in CueHuman that isn't working as it should.
 - **[Show and Tell](https://github.com/cuehuman/community/discussions/categories/show-and-tell):** share what you've built.
 - **[Announcements](https://github.com/cuehuman/community/discussions/categories/announcements):** API changes and new features.
-- **Integration code samples** to help you get started will be added here. Have one to share? See [Contributing](CONTRIBUTING.md).
+- **[Integration code samples](samples/):** working examples to help you get started, beginning with [LangGraph](samples/langgraph/). Have one to share? See [Contributing](CONTRIBUTING.md).
 
 ## Before You Post
 
