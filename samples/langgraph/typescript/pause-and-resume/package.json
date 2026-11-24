@@ -1,0 +1,25 @@
+{
+  "name": "cuehuman-langgraph-pause-and-resume",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "webhook": "tsx webhook-server.ts",
+    "start-run": "tsx start-run.ts",
+    "show-run": "tsx show-run.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@langchain/core": "1.5.0",
+    "@langchain/langgraph": "1.7.5",
+    "@langchain/langgraph-checkpoint-sqlite": "1.1.1",
+    "dotenv": "18.0.10",
+    "express": "5.3.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "5.0.6",
+    "@types/node": "26.6.6",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  }
+}

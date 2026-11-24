@@ -1,0 +1,20 @@
+{
+  "name": "cuehuman-langgraph-ask-and-wait-tool",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "agent": "tsx agent.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@langchain/anthropic": "1.6.6",
+    "dotenv": "18.0.10",
+    "langchain": "1.6.7",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  }
+}
