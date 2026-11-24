@@ -81,9 +81,15 @@ def main() -> None:
     thread = client.threads.create()
     result = client.runs.wait(thread["thread_id"], "approval", input={"action": action, "approver_email": approver_email})
 
+    # When the run pauses, the server returns the pause: what the graph gave `interrupt()`.
+    paused = result.get("__interrupt__")
+
     print(f"Thread:  {thread['thread_id']}")
-    print(f"Request: {result.get('request_id')}")
-    print("Paused, waiting for the human." if "__interrupt__" in result else f"Finished: {result.get('outcome')}")
+    if paused:
+        print(f"Request: {paused[0]['value']['request_id']}")
+        print("Paused, waiting for the human.")
+    else:
+        print(f"Finished: {result.get('outcome')}")
     print(f"Check it later with: python show_run.py {thread['thread_id']}")
 ```
 
