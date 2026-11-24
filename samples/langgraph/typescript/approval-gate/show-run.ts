@@ -16,6 +16,8 @@ if (Object.keys(snapshot.values).length === 0) {
   console.log("No run with that thread ID.");
 } else if (paused.length > 0) {
   for (const call of paused) console.log(`Paused, waiting for a person: ${call.value.description}`);
+} else if (snapshot.next.length > 0) {
+  console.log("Running: the agent is working on its answer.");
 } else {
   console.log(`Finished: ${snapshot.values.messages.at(-1)?.text}`);
 }

@@ -19,6 +19,8 @@ def main() -> None:
     elif snapshot.interrupts:
         for paused in snapshot.interrupts:
             print(f"Paused, waiting for a person: {paused.value['description']}")
+    elif snapshot.next:
+        print("Running: the agent is working on its answer.")
     else:
         print(f"Finished: {snapshot.values['messages'][-1].text}")
 

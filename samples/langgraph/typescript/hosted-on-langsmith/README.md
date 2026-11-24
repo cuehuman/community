@@ -89,6 +89,9 @@ const client = new Client({ apiUrl: process.env.LANGGRAPH_URL, apiKey: process.e
 const thread = await client.threads.create();
 const result = (await client.runs.wait(thread.thread_id, "approval", { input: { action, approverEmail } })) as Record<string, unknown>;
 
+// When the run pauses, the server returns the pause: what the graph gave `interrupt()`.
+const paused = (result.__interrupt__ as Array<{ value: { request_id: string } }> | undefined)?.[0];
+
 console.log(`Thread:  ${thread.thread_id}`);
 ```
 
