@@ -6,6 +6,7 @@ LangGraph can pause a workflow for a person and resume it later. It does not rea
 |---|---|
 | **Pause and resume.** A graph pauses with `interrupt()`, and a CueHuman webhook resumes it when the human answers. Use it when the answer can take minutes or days, and the run must survive a restart. | [Python](python/pause-and-resume/) · [TypeScript](typescript/pause-and-resume/) |
 | **Ask-and-wait tool.** A tool an agent calls to ask a person and wait for the answer. Use it when the answer is expected within a few minutes. | [Python](python/ask-and-wait-tool/) · [TypeScript](typescript/ask-and-wait-tool/) |
+| **Approval gate.** A tool that cannot run until a person approves that exact call, enforced by LangChain's human-in-the-loop middleware. Use it when an action must never happen without sign-off. | [Python](python/approval-gate/) · [TypeScript](typescript/approval-gate/) |
 
 The samples call the CueHuman API directly, with no CueHuman library to install. Each sample's page first shows the code you add to your own project, then how to run the complete example.
 
